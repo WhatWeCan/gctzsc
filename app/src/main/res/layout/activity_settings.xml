@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sttings="http://schemas.android.com/apk/res-auto"
+    xmlns:toptb="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:orientation="vertical">
+
+    <com.hdl.gctzsc.customview.TopBackAndTitleView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        toptb:text="设置" />
+
+    <com.hdl.gctzsc.customview.SettingItem
+        android:id="@+id/si_setting_autoupdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        sttings:Title="自动更新设置"
+        sttings:desc_off="自动更新设置已关闭"
+        sttings:desc_on="自动更新设置已开启" />
+</LinearLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tzsc="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.hdl.gctzsc.customview.TopBackAndTitleView
+            android:id="@+id/action_bar_manager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tzsc:text="管理个人商品" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="right"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="如果商品已经卖出，请及时下架                                               如果商品已经卖出，请及时下架"
+            android:textColor="#F00"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="3dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/listview_header" />
+
+            <ImageView
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/newgoods" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="26dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="在架商品"
+                android:textColor="#FFF" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_manager_show_nomerl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+
+        <ListView
+            android:id="@+id/lv_manager_nomerl"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="2"
+            android:background="#FFF"
+            android:clickable="true"
+            android:divider="@null"
+            android:padding="5dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="3dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/listview_header" />
+
+            <ImageView
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/newgoods" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="26dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="已下架"
+                android:textColor="#FFF" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_manager_show_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+
+        <ListView
+            android:id="@+id/lv_manager_off"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:background="#FFF"
+            android:clickable="true"
+            android:divider="@null"
+            android:padding="5dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_manager_refresh"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_above="@id/ll_bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="15dp"
+        android:clickable="true"
+        android:onClick="onRefresh"
+        android:src="@mipmap/default_ptr_rotate_te" />
+
+
+</RelativeLayout>

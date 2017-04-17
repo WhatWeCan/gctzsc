@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_contnet"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3">
+
+            <ImageView
+                android:id="@+id/iv_manager_img"
+                android:layout_width="69dp"
+                android:layout_height="75dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/cclosed1" />
+
+            <TextView
+                android:id="@+id/tv_manager_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/iv_manager_img"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/iv_manager_img"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="标题"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_manager_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_manager_title"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@id/iv_manager_img"
+                android:ellipsize="end"
+                android:lines="2"
+                android:text="简介"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_manager_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/iv_manager_img"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/iv_manager_img"
+                android:text="价格"
+                android:textColor="#F00"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_manager"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btn_manager_xj"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+                android:background="@drawable/shape_button_finish"
+                android:focusable="false"
+                android:gravity="center"
+                android:text="下  架"
+                android:textColor="#FFF"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btn_manager_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_below="@id/btn_manager_xj"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+                android:background="@drawable/shape_input"
+                android:focusable="false"
+                android:gravity="center"
+                android:text="永久删除"
+                android:textColor="#000"
+                android:textSize="12sp" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="2dp"
+        android:background="#E0EEE0" />
+
+</LinearLayout>

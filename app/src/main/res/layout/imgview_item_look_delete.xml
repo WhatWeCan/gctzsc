@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="3dp">
+
+    <ImageView
+        android:id="@+id/iv_publish_img"
+        android:layout_width="86dp"
+        android:layout_height="86dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/download_pic" />
+
+    <ImageView
+        android:id="@+id/iv_publish_deletebtn"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignRight="@id/iv_publish_img"
+        android:src="@mipmap/delete_img" />
+</RelativeLayout>

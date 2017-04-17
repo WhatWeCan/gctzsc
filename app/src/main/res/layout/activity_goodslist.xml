@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF">
+    <!--标题栏-->
+    <RelativeLayout
+        android:id="@+id/rl_detailinfo_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        android:background="@color/theam_color">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:onClick="onBack"
+            android:src="@mipmap/back_left" />
+
+        <TextView
+            android:id="@+id/tv_goodslist_custom_actionbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="商品列表d"
+            android:textColor="#F00"
+            android:textSize="@dimen/actionbar_fontSize" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_detailinfo_actionbar"
+        android:layout_margin="3dp"
+        android:background="#F8F0FF"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_goodslist_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="输入一个关键字查询，如‘手机’"
+            android:background="@drawable/shape_searchview"
+            android:padding="5dp"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/btn_goodslist_search"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:background="@drawable/shape_search_button"
+            android:padding="1dp"
+            android:text="搜索"
+            android:textColor="#FFF"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gv_goodslist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll_search"
+        android:layout_margin="3dp"
+        android:horizontalSpacing="3dp"
+        android:numColumns="2"
+        android:verticalSpacing="5dp" />
+
+    <ImageView
+        android:id="@+id/iv_goodslist_refresh"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="15dp"
+        android:clickable="true"
+        android:onClick="onRefresh"
+        android:src="@mipmap/default_ptr_rotate_te" />
+
+</RelativeLayout>

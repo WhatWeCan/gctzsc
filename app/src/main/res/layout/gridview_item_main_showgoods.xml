@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_main_grideview_item_bolder">
+
+    <LinearLayout
+        android:id="@+id/ll_home_gridview_goodsinfo_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:orientation="horizontal"
+        android:padding="2dp">
+
+        <com.hdl.gctzsc.customview.XCRoundRectIv
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@mipmap/personal_myimg"  />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_home_gridview_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="黄大力"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_home_gridview_gtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="2016/03/24 11:40"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_home_gridview_gimg"
+        android:layout_width="176dp"
+        android:layout_height="180dp"
+        android:layout_below="@id/ll_home_gridview_goodsinfo_bar"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:src="@mipmap/gi1" />
+
+    <TextView
+        android:id="@+id/tv_home_listview_pai_gtitle"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_home_gridview_gimg"
+        android:layout_centerHorizontal="true"
+        android:ellipsize="end"
+        android:lines="2"
+        android:padding="3dp"
+        android:text="大四学长毕业了   自用自行车出售  9成新 需要的赶紧入手哦"
+        android:textSize="10sp" />
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_home_listview_pai_gtitle"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_home_listview_pai_maxprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:gravity="left"
+            android:text="￥150.00"
+            android:textColor="#F00"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_home_gridview_newgoods_oldprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="￥988.00"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/ll"
+        android:background="#2000" />
+
+    <LinearLayout
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_line"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_home_listview_pai_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_weight="1"
+            android:text="浏览:12"
+            android:textColor="#8000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_home_listview_pai_gclassify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_main_gridview_item_pinkge"
+            android:paddingBottom="1dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:text="个人"
+            android:textColor="#9932CD32"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tv_home_listview_pai_gpinkage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/shape_main_gridview_item_person"
+            android:paddingBottom="1dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:text="包邮"
+            android:textColor="#9F00"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+</RelativeLayout>

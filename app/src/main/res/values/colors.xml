@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#d81e06</color>
+    <color name="colorPrimaryDark">#d81e06</color>
+    <color name="colorAccent">#d81e06</color>
+
+    <color name="activity_start_bg_color">#8F00</color>
+    <color name="activity_guide_selected_color">#FFF</color>
+    <color name="activity_guide_unselected_color">#6969f9</color>
+    <color name="font_color_white">#FFF</color>
+    <color name="theam_color">#87CEFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#aaaaaa</color>
+    <color name="light_blue">#6593cb</color>
+
+</resources>

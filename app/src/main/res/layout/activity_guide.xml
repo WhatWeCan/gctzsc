@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fl_guide_show_bg_img"
+    android:background="@mipmap/dh1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_guide_pagechanger"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/ll_home_point_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="40dp"
+        android:orientation="horizontal" >
+
+        <View
+            style="@style/View_Guide_Point_Style"
+            android:background="@drawable/shape_guide_point_selected" />
+
+        <View
+            style="@style/View_Guide_Point_Style"
+            android:background="@drawable/shape_guide_point_unselected" />
+
+        <View
+            style="@style/View_Guide_Point_Style"
+            android:background="@drawable/shape_guide_point_unselected" />
+
+        <View
+            style="@style/View_Guide_Point_Style"
+            android:background="@drawable/shape_guide_point_unselected" />
+    </LinearLayout>
+
+</FrameLayout>

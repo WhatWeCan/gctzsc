@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">贵财跳蚤市场</string>
+    <string name="head">这里是HeadView</string>
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="refresh_succeed">刷新成功</string>
+    <string name="refresh_fail">刷新失败</string>
+    <string name="pullup_to_load">上拉加载更多</string>
+    <string name="release_to_load">释放立即加载</string>
+    <string name="loading">正在加载...</string>
+    <string name="load_succeed">加载成功</string>
+    <string name="load_fail">加载失败</string>
+    <string name="url_version">http://115.29.148.100:8080/gctzsc/version.json</string>
+    <string name="url_advImg">http://115.29.148.100:8080/gctzsc/advjson.json</string>
+    <string name="url_apk_download">http://115.29.148.100:8080/gctzsc/tzsc.apk</string>
+    <string name="url_login">http://115.29.148.100:8080/tzsc/LoginServlet</string>
+    <string name="url_register">http://115.29.148.100:8080/tzsc/RegisterServlet</string>
+    <string name="url_updatepwd">http://115.29.148.100:8080/tzsc/UpdatePwdServlet</string>
+    <string name="url_publish_goods">http://115.29.148.100:8080/tzsc/PublishGoodsServlet</string>
+    <string name="url_publish_requestgoods">http://115.29.148.100:8080/tzsc/PublishRequestGoodsServlet</string>
+    <string name="url_query_goods">http://115.29.148.100:8080/tzsc/QueryGoodsServlet</string>
+    <string name="url_query_goodsdetail">http://115.29.148.100:8080/tzsc/GetGoodsDetailServlet</string>
+    <string name="url_upload_img">http://115.29.148.100:8080/tzsc/UpLoadImgServlet</string>
+    <string name="url_get_userinfo">http://115.29.148.100:8080/tzsc/UsersInfoServlet</string>
+    <string name="url_send_comment">http://115.29.148.100:8080/tzsc/CommentServlet</string>
+    <string name="url_browcount_add">http://115.29.148.100:8080/tzsc/BrowCountServlet</string>
+    <string name="url_offer">http://115.29.148.100:8080/tzsc/OfferServlet</string>
+    <string name="url_manage_goods">http://115.29.148.100:8080/tzsc/ManagePersonalGoodsServlet</string>
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <com.hdl.gctzsc.customview.NoscrollLinearlayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/actionbar_height"
+            android:background="@color/theam_color">
+
+            <ImageView
+                android:id="@+id/iv_classify_search"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/home_search" />
+
+        </RelativeLayout>
+
+        <include layout="@layout/include_classify_hotbar" />
+
+        <GridView
+            android:id="@+id/gv_classify_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:horizontalSpacing="4dp"
+            android:numColumns="2"
+            android:verticalSpacing="4dp" />
+
+    </com.hdl.gctzsc.customview.NoscrollLinearlayout>
+</ScrollView>
